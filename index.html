@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Manager</title>
+
+    <!-- ============================ CSS ============================ -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cash Register</h1>
+        <p>Enter the bill amount and cash given by the customer and Cashier will easily know the return amount.</p>
+
+        <div class="bill">
+            <label for="bill-input">Total Bill: </label><br>
+            <input type="number" id="bill-input"><br>
+            <p id="error"></p>
+
+            <button id="btn-next">Enter Cash given by Customer</button>
+        </div>
+
+        <div class="given">
+            <label for="cash-input">Cash Given: </label><br>
+            <input type="number" id="cash-input"><br>
+
+            <button id="btn-check">Get Return Amount</button>
+        </div>
+
+
+        <div class="change">
+            <h2>Return Change</h2>
+            <table>
+                <tr>
+                    <th>No. of Notes</th>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                    <td class="no_of_notes"></td>
+                </tr>
+
+                <tr>
+                    <th>Note</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
